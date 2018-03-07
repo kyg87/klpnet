@@ -1,0 +1,36 @@
+<!--
+  Generated template for the PartnerEditPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>PartnerEdit</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+
+        <ion-item>
+          <ion-label floating>점검 소재지 추가</ion-label>
+          <ion-input [(ngModel)]="name" type="text"></ion-input>
+        </ion-item>
+        
+        
+        <button ion-button full (click)="GetPartnerCheck()">추가</button>
+        
+        <ion-item>
+          <ion-label floating>항목 추가</ion-label>
+          <ion-input [(ngModel)]="colName" type="text"></ion-input>
+        </ion-item>
+        
+        <button ion-button full (click)="GetPartnerColCheck()">추가</button>
+  </ion-list>
+
+</ion-content>
